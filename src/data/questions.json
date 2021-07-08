@@ -1,0 +1,108 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "statement": "An animal cell contains:",
+      "answer_options_block": [
+        [
+          { "option": "Cell wall", "isSolution": false },
+          { "option": "Ribosomes", "isSolution": true }
+        ],
+        [
+          { "option": "Cytoplasm", "isSolution": false },
+          { "option": "Chloroplast", "isSolution": true }
+        ],
+        [
+          { "option": "Partially permeable membrane", "isSolution": false },
+          { "option": "Impermeable membrane", "isSolution": true }
+        ],
+        [
+          { "option": "Cellulose", "isSolution": true },
+          { "option": "Mithocondria", "isSolution": false }
+        ]
+      ]
+    },
+    {
+      "id": "2",
+      "statement": "A daily cup of coffee can help with:",
+      "answer_options_block": [
+        [
+          { "option": "Insomnia", "isSolution": false },
+          { "option": "Energy levels", "isSolution": true }
+        ],
+        [
+          { "option": "Get fat", "isSolution": false },
+          { "option": "Burn fat", "isSolution": true }
+        ]
+      ]
+    },
+    {
+      "id": "3",
+      "statement": "Coffee contains:",
+      "answer_options_block": [
+        [
+          { "option": "Bad nutrients", "isSolution": false },
+          { "option": "Essential Nutrients", "isSolution": true }
+        ],
+        [
+          { "option": "Vitamin C", "isSolution": false },
+          { "option": "Riboflavin (vitamin B2)", "isSolution": true }
+        ],
+        [
+          { "option": "Vitamin D", "isSolution": false },
+          { "option": "Magnesium and niacin (vitamin B3)", "isSolution": true }
+        ]
+      ]
+    },
+    {
+      "id": "4",
+      "statement": "Coffee may:",
+      "answer_options_block": [
+        [
+          { "option": "Cure cancer", "isSolution": false },
+          { "option": "Lower your risk of Type 2 Diabetes", "isSolution": true }
+        ],
+        [
+          { "option": "Give you special powers", "isSolution": false },
+          {
+            "option": "Protect you from Alzheimer’s Disease",
+            "isSolution": true
+          }
+        ],
+        [
+          { "option": "Vitamin D", "isSolution": false },
+          { "option": "Protect you from Dementia", "isSolution": true }
+        ]
+      ]
+    },
+    {
+      "id": "5",
+      "statement": "Side effects of too much caffeine:",
+      "answer_options_block": [
+        [
+          { "option": "Happiness", "isSolution": false },
+          { "option": "Anxiety", "isSolution": true }
+        ],
+        [
+          { "option": "Laziness", "isSolution": false },
+          {
+            "option": "Insomnia",
+            "isSolution": true
+          }
+        ],
+        [
+          { "option": "Happy tummy", "isSolution": false },
+          { "option": "Digestive Issues", "isSolution": true }
+        ],
+        [
+          { "option": "Low Blood Pressure", "isSolution": false },
+          { "option": "High Blood Pressure", "isSolution": true }
+        ],
+        [
+          { "option": "Slow Heart Rate", "isSolution": false },
+          { "option": "Rapid Heart Rate", "isSolution": true }
+        ]
+      ]
+    }
+  ]
+}
