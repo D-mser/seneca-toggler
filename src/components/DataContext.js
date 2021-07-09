@@ -1,26 +1,30 @@
 import React, { useEffect, useState } from "react";
 
-const DataContext = React.createContext();
+const DataContext = React.createContext(null);
 
 function DataContextProvider({ children, url }) {
-  const [isFetching, setIsFetching] = useState(true);
   const [data, setData] = useState([]);
+  const [isFetching, setIsFetching] = useState(true);
 
   useEffect(() => {
-    if (data.length) return;
     fetch(url)
+      .then((res) => res.json())
       .then((res) => {
-        setData((prevData) => prevData.concat(res.data));
+        setData(res.questions);
         setIsFetching(false);
       })
       .catch(function (error) {
         console.log(error);
         setIsFetching(false);
       });
-  });
+
+    return () => {
+      setData([]);
+    };
+  }, [url]);
 
   return (
-    <DataContext.Provider value={{ isFetching, data }}>
+    <DataContext.Provider value={{ data, isFetching }}>
       {children}
     </DataContext.Provider>
   );
