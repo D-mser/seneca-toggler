@@ -9,7 +9,9 @@ export default function Question({ question }) {
 
   return (
     <div>
-      <h1>{question.statement}</h1>
+      <div className="h-centered">
+        <h1>{question.statement}</h1>
+      </div>
       <div>{options}</div>
     </div>
   );
@@ -22,6 +24,7 @@ Question.propTypes = {
     answer_options_block: PropTypes.arrayOf(
       PropTypes.arrayOf(
         PropTypes.shape({
+          id: PropTypes.string,
           option: PropTypes.string,
           isSolution: PropTypes.bool,
         })
