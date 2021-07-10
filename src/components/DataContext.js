@@ -10,7 +10,7 @@ function DataContextProvider({ children, url }) {
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
-        setData(res.questions);
+        setData(res.data);
         setIsFetching(false);
       })
       .catch(function (error) {
