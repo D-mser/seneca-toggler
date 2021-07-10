@@ -15,10 +15,12 @@ export default function App() {
       {isFetching ? (
         <h1>Loading...</h1>
       ) : (
-        <>
+        <div className="vh-centered">
           <Question question={question} />
-          <Button text="Next question" onClick={setNextQuestion} />
-        </>
+          <div className="h-centered">
+            <Button text="Next question" onClick={setNextQuestion} />
+          </div>
+        </div>
       )}
     </>
   );
