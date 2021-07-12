@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import RadioButton from "./RadioButton";
-import { spaceToDash, random } from "../utils";
+import { spaceToDash } from "../utils";
 
-export default function OptionBlock({ options }) {
+export default function OptionBlock({ options, setValidAnswer, disabled }) {
+  const [selected, setSelected] = useState("");
+
+  function onChange(event) {
+    const selectedInput = event.target.value;
+    setSelected(selectedInput);
+
+    if (options.filter((o) => o.option === selectedInput)[0].isSolution) {
+      setValidAnswer();
+    }
+  }
+
   const blocks = options.map((o) => (
-    <RadioButton
+    <input
+      type="radio"
       key={spaceToDash(o.option)}
       name={o.id}
       label={o.option}
-      checked={true}
+      onChange={onChange}
+      value={o.option}
+      checked={selected === o.option}
+      disabled={disabled}
     />
   ));
 
@@ -24,4 +38,5 @@ OptionBlock.propTypes = {
       isSolution: PropTypes.bool,
     })
   ).isRequired,
+  disabled: PropTypes.bool.isRequired,
 };
