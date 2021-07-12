@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import OptionBlock from "./OptionBlock";
 
 export default function Question({ question }) {
-  const options = question.answer_options_block.map((optionBlock, index) => (
-    <OptionBlock key={index} options={optionBlock} />
+  const [validAnswers, setValidAnswers] = useState(0);
+  const optionBlocks = question.answer_options_block;
+
+  function validateOptionBlock() {
+    setValidAnswers((prev) => prev + 1);
+  }
+
+  const options = optionBlocks.map((optionBlock, index) => (
+    <OptionBlock
+      key={index}
+      options={optionBlock}
+      setValidAnswer={validateOptionBlock}
+      disabled={optionBlocks.length === validAnswers}
+    />
   ));
+
+  useEffect(() => {
+    setValidAnswers(0);
+  }, [question]);
 
   return (
     <div>
