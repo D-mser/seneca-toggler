@@ -18,7 +18,11 @@ export default function App() {
         <div className="vh-centered">
           <Question question={question} />
           <div className="h-centered">
-            <Button text="Next question" onClick={setNextQuestion} />
+            <Button
+              text="Next question"
+              onClick={setNextQuestion}
+              className="simple-button"
+            />
           </div>
         </div>
       )}
