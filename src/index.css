@@ -73,6 +73,10 @@
   margin: auto;
 }
 
+input:hover {
+  opacity: 0.7;
+}
+
 .default {
   background-color: transparent;
 }
@@ -118,15 +122,20 @@
   color: var(--main-text-color);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .option-block {
     flex-direction: column;
+  }
+
+  .switch-toggle {
+    overflow: hidden;
+    position: relative;
   }
 
   .switch-toggle input:checked:nth-child(1) {
     border-radius: 100px 100px 0rem 0rem;
   }
-  .switch-toggle input:checked:nth-child(2) {
+  .switch-toggle input:checked:nth-last-of-type(1) {
     border-radius: 0rem 0rem 100px 100px;
   }
 }
