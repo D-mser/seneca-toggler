@@ -9,3 +9,7 @@ Limitations:
 - there can be only one source for questions data as DataContextProvider receives only one url
 - order of the questions & answer positions is predefined
 - supports only 3 states of theme changing (provided by useTheme custom hook)
+
+
+Demo
+![demo](https://github.com/D-mser/seneca-toggler/blob/main/public/toggle-demo.gif)
