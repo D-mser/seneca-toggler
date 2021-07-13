@@ -85,4 +85,5 @@ Question.propTypes = {
       )
     ),
   }).isRequired,
+  setNextQuestion: PropTypes.func.isRequired,
 };
