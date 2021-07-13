@@ -32,6 +32,7 @@
       "answer_options_block": [
         [
           { "id": "1", "option": "Insomnia", "isSolution": false },
+          { "id": "1", "option": "Nearsightedness", "isSolution": false },
           { "id": "1", "option": "Energy levels", "isSolution": true }
         ],
         [
@@ -68,6 +69,8 @@
       "answer_options_block": [
         [
           { "id": "1", "option": "Cure cancer", "isSolution": false },
+          { "id": "1", "option": "Spawn unicorns", "isSolution": false },
+          { "id": "1", "option": "Spawn puppies", "isSolution": false },
           {
             "id": "1",
             "option": "Lower your risk of Type 2 Diabetes",
