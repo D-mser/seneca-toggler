@@ -48,4 +48,9 @@ OptionBlock.propTypes = {
     })
   ).isRequired,
   disabled: PropTypes.bool.isRequired,
+  blockId: PropTypes.string.isRequired,
+  styles: PropTypes.shape({
+    backgroundClass: PropTypes.string,
+    borderClass: PropTypes.string,
+  }),
 };
